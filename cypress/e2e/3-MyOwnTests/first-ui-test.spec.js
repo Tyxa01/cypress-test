@@ -57,6 +57,6 @@ describe('Fourth UI ', () =>{
         const name = "Artur"
         cy.get ('input.shape-rectangle').type(name)
         cy.get ('button.appearance-filled').contains('Submit').click()
-        cy.get('li.ng-star-inserted').contains(name)
+        cy.get('li.ng-star-inserted').contains(name).should('be.visible')
      })
     })
