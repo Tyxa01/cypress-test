@@ -42,7 +42,7 @@ describe('Third UI ', () =>{
     
     it ('Popover test', ()=> {
        cy.get('button.appearance-filled').contains('Right').trigger('mouseenter')
-       cy.get('nb-popover').should('be.visible').contains('Hello, how are you today?')
+       cy.contains('nb-popover', 'Hello, how are you today?').should('be.visible')
        
      })
     })
