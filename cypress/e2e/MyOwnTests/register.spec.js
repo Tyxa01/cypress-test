@@ -7,7 +7,7 @@ const headerPage = new HeaderPage()
 
 it('Negative register', ()=>{
     registerPage.registerPageOpen()
-    registerPage.fullName.click ().type('tes') 
+    registerPage.fullName.type('tes') 
     registerPage.emailInput.click ().type ('invalid mail')
     registerPage.passwordInput.click().type ('123')
     registerPage.rePasswordInput.click()
