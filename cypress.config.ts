@@ -6,7 +6,7 @@ export default defineConfig({
       // implement node event listeners here
     },
 
-    baseUrl: 'http://localhost:4200/pages',
+    baseUrl: 'http://localhost:4200/',
     specPattern: 'cypress/e2e/**/*.spec.{js,jsx,ts,tsx}'
   },
   video:true,
