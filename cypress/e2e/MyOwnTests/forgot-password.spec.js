@@ -7,7 +7,7 @@ const forgotPassword = new ForgotPassword()
 const registerPage = new RegisterPage ()
 const loginPage = new LoginPage()
 
-it('Email validation', ()=>{
+it('Improper email validation (negative test)', ()=>{
     forgotPassword.forgotPasswordPageOpen()
     forgotPassword.emailInput.click().type('invalid email')
     forgotPassword.title.click()
