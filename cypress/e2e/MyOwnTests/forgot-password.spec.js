@@ -11,7 +11,6 @@ it('Email validation', ()=>{
     forgotPassword.forgotPasswordPageOpen()
     forgotPassword.emailInput.click().type('invalid email')
     forgotPassword.title.click()
-    forgotPassword.emailError
     forgotPassword.emailError.should ("contain", "Email should be the real one!")
    
 })
