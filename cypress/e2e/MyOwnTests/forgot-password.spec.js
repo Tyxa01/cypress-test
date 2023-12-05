@@ -9,7 +9,7 @@ const loginPage = new LoginPage()
 
 it('Improper email validation (negative test)', ()=>{
     forgotPassword.forgotPasswordPageOpen()
-    forgotPassword.emailInput.click().type('invalid email')
+    forgotPassword.emailInput.type('invalid email')
     forgotPassword.title.click()
     forgotPassword.emailError.should ("contain", "Email should be the real one!")
    
