@@ -6,7 +6,7 @@ describe('Forgot password page tests with PageObject', ()=> {
 const forgotPassword = new ForgotPassword()
 const registerPage = new RegisterPage ()
 const loginPage = new LoginPage()
-
+beforeEach(()=> forgotPassword.forgotPasswordPageOpen() )
 it('Improper email validation (negative test)', ()=>{
     forgotPassword.forgotPasswordPageOpen()
     forgotPassword.emailInput.type('invalid email')
