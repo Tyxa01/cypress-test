@@ -7,5 +7,5 @@ get todayDayButton() {
 return cy.get("nb-calendar-day-cell.day-cell.today");
 }
 DatePickerPageOpen () {
-cy.visit ('http://localhost:4200/pages/forms/datepicker')}
+cy.visit ('pages/forms/datepicker')}
 }

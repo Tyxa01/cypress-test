@@ -25,6 +25,6 @@ get emailError () {
 return cy.get ('p.caption.status-danger')
 }
 forgotPasswordPageOpen () {
-cy.visit('http://localhost:4200/auth/request-password')}
+cy.visit('/auth/request-password')}
 }
 

@@ -1,12 +1,14 @@
 /// <reference types = "cypress" />
-import {RegisterPage} from '../../../pages/Register.page'
-import {HeaderPage} from '../../../pages/header.page'
+import {RegisterPage} from '../../pages/Register.page'
+import {HeaderPage} from '../../pages/Header.page'
 describe('Register test with PageObject', ()=> {
 const registerPage = new RegisterPage ()
 const headerPage = new HeaderPage()
 
+
+beforeEach(()=> registerPage.registerPageOpen())
+
 it('Negative register', ()=>{
-    registerPage.registerPageOpen()
     registerPage.fullName.type('tes') 
     registerPage.emailInput.click ().type ('invalid mail')
     registerPage.passwordInput.click().type ('123')
@@ -19,7 +21,6 @@ it('Negative register', ()=>{
     
 })
 it('Possitive register and register check', ()=>{
-    registerPage.registerPageOpen()
     registerPage.fullName.click ().type('Artour') 
     registerPage.emailInput.click ().type ('test@i.ua')
     registerPage.passwordInput.click().type ('12345')

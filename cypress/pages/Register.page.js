@@ -49,6 +49,6 @@ get rePasswordError () {
 return cy.get ('p.caption.status-danger').eq(3)
 }
 registerPageOpen () {
-    cy.visit('http://localhost:4200/auth/register')}
+    cy.visit('/auth/register')}
 }
 

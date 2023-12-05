@@ -43,7 +43,7 @@ get passwordError () {
 return cy.get ('p.caption.status-danger').eq(1)
 }
 loginPageOpen () {
-    cy.visit ('http://localhost:4200/auth/login')}
+    cy.visit ('/auth/login')}
 }
 
 
