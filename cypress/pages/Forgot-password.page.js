@@ -1,30 +1,30 @@
 /// <reference types = "cypress" />
 export class ForgotPassword {
-get backButton (){
-return cy.get('a[aria-label="Back"]');
+  get backButton() {
+    return cy.get('a[aria-label="Back"]');
+  }
+  get title() {
+    return cy.get("#title");
+  }
+  get subTitle() {
+    return cy.get("p.sub-title");
+  }
+  get emailInput() {
+    return cy.get("#input-email");
+  }
+  get requestButton() {
+    return cy.get("button[status='primary']", "Request password");
+  }
+  get backToLoginButton() {
+    return cy.get('a[routerlink="../login"]');
+  }
+  get registerButton() {
+    return cy.get('a[routerlink="../register"]');
+  }
+  get emailError() {
+    return cy.get("p.caption.status-danger");
+  }
+  forgotPasswordPageOpen() {
+    cy.visit("/auth/request-password");
+  }
 }
-get title () {
-return cy.get ('#title')
-}
-get subTitle () {
-return cy.get ('p.sub-title')
-}
-get emailInput() {
-return cy.get ('#input-email')
-}
-get requestButton() {
-return cy.get ("button[status='primary']", "Request password")
-}
-get backToLoginButton () {
-return cy.get ('a[routerlink="../login"]')
-}
-get registerButton () {
-return cy.get ('a[routerlink="../register"]')
-}
-get emailError () {
-return cy.get ('p.caption.status-danger')
-}
-forgotPasswordPageOpen () {
-cy.visit('/auth/request-password')}
-}
-
