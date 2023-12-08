@@ -6,12 +6,15 @@ export default defineConfig({
       // implement node event listeners here
     },
 
-    baseUrl: 'http://localhost:4200/',
-    specPattern: 'cypress/e2e/**/*.spec.{js,jsx,ts,tsx}'
+    baseUrl: "http://localhost:4200/",
+    specPattern: "cypress/e2e/**/*.spec.{js,jsx,ts,tsx}",
   },
-  video:true,
-
+  video: true,
+  reporter: "mochawesome",
+  reporterOptions: {
+    reportDir: "cypress/results",
+    overwrite: false,
+    html: false,
+    json: true,
+  },
 });
-
-
-  

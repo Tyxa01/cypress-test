@@ -2,7 +2,7 @@
 
 describe("Accordion UI", () => {
   beforeEach(() => {
-    cy.visit("/layout/accordion");
+    cy.visit("pages/layout/accordion");
   });
 
   it("Toggle first item test", () => {
