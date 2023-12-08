@@ -9,7 +9,7 @@ export default defineConfig({
     baseUrl: "http://localhost:4200/",
     specPattern: "cypress/e2e/**/*.spec.{js,jsx,ts,tsx}",
   },
-  video: true,
+  video: false,
   reporter: "mochawesome",
   reporterOptions: {
     reportDir: "cypress/results",
