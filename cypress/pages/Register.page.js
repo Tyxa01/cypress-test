@@ -49,6 +49,6 @@ export class RegisterPage {
     return cy.get("p.caption.status-danger").eq(3);
   }
   registerPageOpen() {
-    cy.visit("/auth/register");
+    cy.visit("http://localhost:4200/auth/register");
   }
 }

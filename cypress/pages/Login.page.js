@@ -43,6 +43,6 @@ export class LoginPage {
     return cy.get("p.caption.status-danger").eq(1);
   }
   loginPageOpen() {
-    cy.visit("/auth/login");
+    cy.visit("http://localhost:4200/auth/login");
   }
 }

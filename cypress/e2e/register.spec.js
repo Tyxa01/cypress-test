@@ -1,6 +1,6 @@
 /// <reference types = "cypress" />
-import { RegisterPage } from "../../pages/Register.page";
-import { HeaderPage } from "../../pages/Header.page";
+import { RegisterPage } from "../../cypress/pages/Register.page";
+import { HeaderPage } from "../../cypress/pages/Header.page";
 describe("Register test with PageObject", () => {
   const registerPage = new RegisterPage();
   const headerPage = new HeaderPage();

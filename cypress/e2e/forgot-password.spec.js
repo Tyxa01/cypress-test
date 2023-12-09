@@ -1,7 +1,7 @@
 /// <reference types = "cypress" />
-import { ForgotPassword } from "../../pages/Forgot-password.page";
-import { RegisterPage } from "../../pages/Register.page";
-import { LoginPage } from "../../pages/Login.page";
+import { ForgotPassword } from "../../cypress/pages/Forgot-password.page";
+import { RegisterPage } from "../../cypress/pages/Register.page";
+import { LoginPage } from "../../cypress/pages/Login.page";
 describe("Forgot password page tests with PageObject", () => {
   const forgotPassword = new ForgotPassword();
   const registerPage = new RegisterPage();

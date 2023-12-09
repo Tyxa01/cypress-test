@@ -1,6 +1,6 @@
 /// <reference types = "cypress" />
-import { LoginPage } from "../../pages/Login.page";
-import { HeaderPage } from "../../pages/Header.page";
+import { LoginPage } from "../../cypress/pages/Login.page";
+import { HeaderPage } from "../../cypress/pages/Header.page";
 describe("Login test with PageObject", () => {
   const loginPage = new LoginPage();
   const headerPage = new HeaderPage();

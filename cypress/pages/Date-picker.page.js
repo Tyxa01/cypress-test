@@ -7,6 +7,6 @@ export class DatePickerPage {
     return cy.get("nb-calendar-day-cell.day-cell.today");
   }
   DatePickerPageOpen() {
-    cy.visit("pages/forms/datepicker");
+    cy.visit("forms/datepicker");
   }
 }

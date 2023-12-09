@@ -25,6 +25,6 @@ export class ForgotPassword {
     return cy.get("p.caption.status-danger");
   }
   forgotPasswordPageOpen() {
-    cy.visit("/auth/request-password");
+    cy.visit("http://localhost:4200/auth/request-password");
   }
 }
