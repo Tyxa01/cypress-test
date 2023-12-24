@@ -18,6 +18,12 @@ jobs:
       - name: Install dependencies
         run: npm install --force  
       - name: Run server and test
-        run: npm run cy:run:server  
-
+        run: npm run cy:run:server
+      - name: Create report
+        run: npm run report:all
+      - name: Upload report
+        uses: actions/upload-artifact@v3
+        with:
+            name: test-report
+            path: mochawesome-report/
     
