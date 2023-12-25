@@ -29,7 +29,6 @@ jobs:
         with:
             name: test-report
             path: mochawesome-report/
-    
   cypress_run2:
     runs-on: ubuntu-latest
     steps:
